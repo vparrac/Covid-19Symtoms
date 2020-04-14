@@ -1,3 +1,4 @@
+// algunos errores de identacion y de comillas
 import React, { useRef, useState } from "react";
 import { Redirect } from 'react-router';
 // import PropTypes from 'prop-types';
