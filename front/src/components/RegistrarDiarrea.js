@@ -1,3 +1,5 @@
+//juan camilo:algunos errores de identacion y comillas, tambien faltaron los propTypes
+
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -5,6 +7,7 @@ import NoAutorizado from "./NoAutorizado";
 import Menu from "./Menu";
 import RegistroExitoso from './RegistroExitoso';
 export const RegistrarDiarrea = (props) => {
+  //deberia ser una constante
   const [maxFecha, setMaxFecha] = useState(new Date());
 
   const [minutos, setMinutos] = useState(0);
