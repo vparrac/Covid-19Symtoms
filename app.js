@@ -1,13 +1,18 @@
+//juan camilo: esta variable no se esta usando
 const createError = require("http-errors");
 const express = require("express");
 const path = require("path");
+//juan camilo: esta variable no se esta usando
 const cors = require("cors");
 const morgan = require("morgan");
 const engine = require("ejs-mate");
 const indexRouter = require("./routes/index");
 const registrarRouter = require("./routes/registrar")
+//juan camilo: esta variable no se esta usando
 const flash = require("connect-flash");
+//juan camilo: esta variable no se esta usando
 const session = require("express-session");
+//juan camilo: esta variable no se esta usando
 const bodyParser = require("body-parser");
 
 const configurePassport = require("./passport/passport_config.js");
@@ -29,7 +34,7 @@ app.use(express.json());
  * en false nos indica que no recibiremos archivos pesados como imagenes o documentos
  */
 app.use(express.urlencoded({ extended: false }));
-
+//juan camilo: me parece algo inutil esta linea por lo que en realidad no se usa nada estatico de la carpeta public
 app.use(express.static(path.join(__dirname, "public")));
 
 configurePassport(app);
