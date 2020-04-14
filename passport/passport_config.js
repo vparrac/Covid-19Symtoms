@@ -2,6 +2,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
 const MongoUtils = require("../db");
+//juan camilo: no estan usando el bcrypt
 const bcrypt = require("bcrypt-nodejs");
 
 function configurePassport(app) {
@@ -39,6 +40,8 @@ passport.deserializeUser(async (user, done) => {
   const usuario = await MongoUtils.getDocById(user.id, "login");
   done(null, usuario);
 });
+
+//juan camilo: me parecion muy chevere que generaran sus propias estrategias y personalizaran los metodos de passport
 passport.use(
   "local-signup",
   new LocalStrategy(
