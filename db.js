@@ -1,3 +1,4 @@
+//Juan Camilo:genera errores por las comillas en eslint
 require('dotenv').config();
 const { MongoClient, ObjectId } = require('mongodb');
 
