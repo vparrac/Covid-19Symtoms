@@ -1,3 +1,4 @@
+//juan camilo:algunos errores de identacion y comillas, tambien faltaron los propTypes
 import React, { useState, useEffect } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
@@ -6,8 +7,10 @@ import NoAutorizado from './NoAutorizado';
 import RegistroExitoso from './RegistroExitoso';
 
 export const Reporte = (props) => {
+  //deberia ser constante
   const [maxFecha, setMaxFecha] = useState(new Date());
   const [calendarFecha, setCalendarFecha] = useState(new Date());
+  // nunca se usa el set
   const [exito, setexito] = useState('');
   const [showResults, setResults] = useState(false);
   const [showCalendar, setCalendar] = useState(true);
