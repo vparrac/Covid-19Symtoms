@@ -1,5 +1,6 @@
 {
   "env": {
+    //aca falto agregar node
     "browser": true
   },
   "extends": ["eslint:recommended", "prettier", "plugin:react/recommended"],
