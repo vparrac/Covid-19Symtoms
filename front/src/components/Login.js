@@ -39,6 +39,7 @@ const Login = (props) => {
       }
     });
   };
+  //juan camilo: genera algunos errores por identacion
   return (
     <div>{ 
       props.user==null?(
@@ -91,6 +92,8 @@ const Login = (props) => {
     </div>
   );
 };
+
+//juan camilo:seria bueno si definir los proptypes para evitar errores
 
 // Login.propTypes = {
 
