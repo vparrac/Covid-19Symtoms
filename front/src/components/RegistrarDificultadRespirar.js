@@ -1,3 +1,5 @@
+//juan camilo:algunos errores de comillas, tambien faltaron los propTypes
+
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -5,6 +7,7 @@ import Menu from "./Menu";
 import NoAutorizado from "./NoAutorizado";
 import RegistroExitoso from './RegistroExitoso';
 export const RegistrarDificultadRespirar = (props) => {
+  //deberia ser constante
   const [maxFecha, setMaxFecha] = useState(new Date());
 
   const [minutos, setMinutos] = useState(0);
@@ -32,6 +35,7 @@ export const RegistrarDificultadRespirar = (props) => {
         "Content-Type": "application/json",
       },
     }).then((res) => {
+      //el then se habria podido dejar vacio si no se iba a usar res
       setexito("exito");
     });
   }
