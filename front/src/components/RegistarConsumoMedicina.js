@@ -107,5 +107,6 @@ const RegistarConsumoMedicina = (props) => {
     </div>
   );
 };
+// hacen falta los propstypes
 
 export default RegistarConsumoMedicina;
