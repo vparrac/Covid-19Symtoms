@@ -1,3 +1,5 @@
+//juan camilo:algunos errores decomillas, tambien faltaron los propTypes
+
 import React, { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -5,6 +7,7 @@ import Menu from "./Menu";
 import NoAutorizado from "./NoAutorizado";
 import RegistroExitoso from './RegistroExitoso';
 export const RegistrarFatiga = (props) => {
+  //deberia ser una constante
   const [maxFecha, setMaxFecha] = useState(new Date());
 
   const [fecha, setCalendarFecha] = useState(new Date());
@@ -32,6 +35,7 @@ export const RegistrarFatiga = (props) => {
         "Content-Type": "application/json",
       },
     }).then((res) => {
+      // no se usa el res
       setexito("exito");
     });
   }
