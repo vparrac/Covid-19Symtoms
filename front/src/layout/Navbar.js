@@ -19,6 +19,7 @@ import CerroSesion from "../components/CerroSesion";
 import NoAutorizado from "../components/NoAutorizado";
 import RegistarConsumoMedicina from '../components/RegistarConsumoMedicina';
 import Reporte from '../components/Reporte';
+//juan camilo: esta dos veces el import de link
 import {Link} from "react-router-dom";
 
 
@@ -93,7 +94,7 @@ const Navbar = () => {
           )}
         </nav>
       </div>
-
+  {/* juan camilo: segun la documentacion de react-router, los componentes Route deberian estar dentro de un Switch */}
       <Route
         path="/registrarfiebre"
         exact
