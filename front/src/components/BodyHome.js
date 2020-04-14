@@ -1,7 +1,8 @@
+// jaun camilo: genera error por comillas
 import React from 'react';
 // import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
-
+//juan camilo: hiciron falta alt's dicientes en la imagenes
 const BodyHome = () => {
   return (
     <div className="container-fluid">
