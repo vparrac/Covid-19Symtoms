@@ -1,5 +1,5 @@
 import React from "react";
-
+// no se usan los props
 const RegistroExitoso = (props) => {
   return (
     <div className="container">
